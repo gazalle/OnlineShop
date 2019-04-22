@@ -6,14 +6,21 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "webpack",
-    "dev": "webpack-dev-server --open"
+    "dev": "webpack-dev-server --open",
+    "initialize": "babel-node src/app/server/initialize-db"
   },
   "author": "Gazelle Zaheer",
   "license": "ISC",
   "dependencies": {
     "bootstrap": "^4.3.1",
     "express": "^4.16.4",
-    "jquery": "^3.4.0"
+    "history": "^4.9.0",
+    "jquery": "^3.4.0",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "react-redux": "^7.0.2",
+    "react-router-dom": "^5.0.0",
+    "redux": "^4.0.1"
   },
   "devDependencies": {
     "@babel/core": "^7.4.3",
@@ -22,6 +29,7 @@
     "@babel/preset-react": "^7.0.0",
     "@babel/register": "^7.4.0",
     "babel-loader": "^8.0.5",
+    "mongodb": "^3.2.3",
     "webpack": "^4.30.0",
     "webpack-cli": "^3.3.0",
     "webpack-command": "^0.4.2",
